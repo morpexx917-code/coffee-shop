@@ -15,7 +15,6 @@ import SearchBar from "./SearchBar";
 import CartDropdown from "./CartDropdown";
 import "./Navbar.css";
 
-// Nav links shown in the center of the navbar
 const navLinks = ["Home", "Menu", "About", "Contact"];
 
 const Navbar = ({ cartItems, setCartItems, onSearch }) => {
@@ -26,9 +25,6 @@ const Navbar = ({ cartItems, setCartItems, onSearch }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
 
-  // On first load: restore theme only.
-  // Cart is now owned and persisted by App.jsx, so Navbar no longer touches it.
-// Restore theme on first load
 useEffect(() => {
   const savedTheme = localStorage.getItem("theme");
   const isDark = savedTheme === "dark";
@@ -39,7 +35,6 @@ useEffect(() => {
   document.body.classList.toggle("dark", isDark);
 }, []);
 
-// Close the search bar when ESC is pressed
 useEffect(() => {
   const handleEsc = (e) => {
     if (e.key === "Escape") setIsSearchOpen(false);
@@ -52,7 +47,6 @@ useEffect(() => {
   };
 }, []);
 
-// Switch between light and dark mode
 const toggleTheme = () => {
   const newTheme = !isDarkMode;
 
