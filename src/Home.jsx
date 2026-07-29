@@ -81,7 +81,6 @@ const Home = ({
   coffee.name.toLowerCase().includes((search || "").toLowerCase())
 );
 
-  // Fetch 6 products and transform them into coffee items
   useEffect(() => {
     const fetchCoffee = async () => {
       try {
@@ -142,7 +141,6 @@ const Home = ({
      <PageTransition>
     <main className="bg-[#F8F5F2] dark:bg-[#121212] text-[#4B2E2B] dark:text-white font-sans">
       {/* ===================== HERO SECTION ===================== */}
-      {/* pt-32 leaves space at the top for a future Navbar */}
       <section className="pt-32 pb-16 px-6 md:px-12 lg:px-20 bg-[#F8F5F2] dark:bg-[#121212]">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left: text content */}
