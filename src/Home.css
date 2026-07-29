@@ -1,0 +1,23 @@
+body.dark main {
+  background: #121212;
+}
+
+body.dark section {
+  background: #121212 !important;
+}
+
+body.dark .coffee-card,
+body.dark .feature-card,
+body.dark .testimonial-card,
+body.dark .category-card {
+  background: #222 !important;
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark span {
+  color: white !important;
+}
