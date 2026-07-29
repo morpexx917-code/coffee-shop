@@ -7,8 +7,6 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-// ===================== STATIC DATA =====================
-
 const contactInfo = [
   {
     id: 1,
@@ -71,8 +69,6 @@ const socialLinks = [
   { id: 5, icon: FaGithub, label: "GitHub", href: "#" },
 ];
 
-// ===================== COMPONENT =====================
-
 const Contact = () => {
   // Contact form state
   const [formData, setFormData] = useState({
@@ -120,7 +116,6 @@ const Contact = () => {
   return (
     <main className="bg-[#F8F5F2] dark:bg-[#121212] text-[#4B2E2B] dark:text-white font-sans">
       {/* ===================== HERO SECTION ===================== */}
-      {/* pt-32 leaves space at the top for the Navbar */}
       <section className="pt-32 pb-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-[#E8DCCB] to-[#F8F5F2] dark:from-[#2a2a2a] dark:to-[#121212]">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block bg-[#E8DCCB] dark:bg-[#2a2a2a] text-[#6F4E37] dark:text-[#C89B6D] font-medium text-sm tracking-wide px-4 py-1.5 rounded-full mb-5">
