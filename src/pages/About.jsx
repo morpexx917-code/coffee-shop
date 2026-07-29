@@ -94,13 +94,12 @@ const teamMembers = [
 // ===================== COMPONENT =====================
 
 const About = () => {
-  // Simple count-up animation state for the statistics section
   const [counts, setCounts] = useState(stats.map(() => 0));
 
 
   useEffect(() => {
-    const duration = 1500; // total animation time in ms
-    const frameRate = 30; // update every 30ms
+    const duration = 1500; 
+    const frameRate = 30; 
     const steps = duration / frameRate;
 
     let currentStep = 0;
@@ -121,7 +120,6 @@ const About = () => {
     <PageTransition>
     <main className="bg-[#F8F5F2] dark:bg-[#121212] text-[#4B2E2B] dark:text-white font-sans">
       {/* ===================== HERO SECTION ===================== */}
-      {/* pt-32 leaves space at the top for the Navbar */}
       <section className="pt-32 pb-16 px-6 md:px-12 lg:px-20 bg-[#F8F5F2] dark:bg-[#121212]">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left: text content */}
